@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mostrar" prefHeight="500.0" prefWidth="790.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prototipo.controllers.LibroDeTexto">
+   <children>
+      <Pane layoutX="16.0" layoutY="82.0" prefHeight="401.0" prefWidth="757.0" style="-fx-background-color: #000000;">
+         <children>
+            <Button fx:id="buttonmatematicas" layoutX="65.0" layoutY="146.0" mnemonicParsing="false" onMouseClicked="#buttonmatematicasOnMouseClicked" prefHeight="30.0" prefWidth="90.0" text="Matematicas" />
+            <Button fx:id="buttonespañol" layoutX="330.0" layoutY="207.0" mnemonicParsing="false" onMouseClicked="#buttonespañolOnMouseClicked" prefHeight="30.0" prefWidth="90.0" text="Español" />
+            <Button fx:id="buttoncalculo" layoutX="592.0" layoutY="146.0" mnemonicParsing="false" onMouseClicked="#buttoncalculoOnMouseClicked" prefHeight="30.0" prefWidth="90.0" text="Calculo" />
+            <Button fx:id="buttonalgebra" layoutX="65.0" layoutY="336.0" mnemonicParsing="false" onMouseClicked="#buttonalgebraOnMouseClicked" prefHeight="30.0" prefWidth="90.0" text="Algebra" />
+            <Button fx:id="buttonderecho" layoutX="592.0" layoutY="336.0" mnemonicParsing="false" onMouseClicked="#buttonderechoOnMouseClicked" prefHeight="30.0" prefWidth="90.0" text="Derechos" />
+            <ImageView fitHeight="142.0" fitWidth="164.0" layoutX="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/img/Matematicas.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="222.0" fitWidth="119.0" layoutX="316.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/img/español.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="142.0" fitWidth="107.0" layoutX="584.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/img/calculo.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="142.0" fitWidth="107.0" layoutX="65.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/img/algebra.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="119.0" layoutX="576.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/img/derechos.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="290.0" layoutY="14.0" prefHeight="48.0" prefWidth="210.0" text="Libreria" textFill="#fffbfb">
+         <font>
+            <Font name="System Bold Italic" size="38.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="79.0" fitWidth="92.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/img/logodegometa.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="buttonregresar" layoutX="713.0" layoutY="13.0" mnemonicParsing="false" onMouseClicked="#buttonregresarOnMouseClicked" prefHeight="30.0" prefWidth="66.0" style="-fx-background-color: #0D3C38;" text="Regresar" textFill="#fffbfb" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prototipo.controllers.Programacion">
+   <children>
+      <Label layoutX="224.0" layoutY="14.0" prefHeight="31.0" prefWidth="152.0" text="Libreria" textFill="#f2efef">
+         <font>
+            <Font name="System Bold Italic" size="38.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonjava" layoutX="59.0" layoutY="327.0" mnemonicParsing="false" onMouseClicked="#buttonjavaOnMouseClicked" prefHeight="33.0" prefWidth="90.0" text="Java">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonpython" layoutX="260.0" layoutY="327.0" mnemonicParsing="false" onMouseClicked="#buttonpythonOnMouseClicked" text="Python">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonc" layoutX="460.0" layoutY="327.0" mnemonicParsing="false" onMouseClicked="#buttoncOnMouseClicked" text="C++">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="236.0" fitWidth="141.0" layoutX="33.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/img/java.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="202.0" fitWidth="169.0" layoutX="241.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/img/python.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="192.0" fitWidth="178.0" layoutX="422.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/img/c.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="74.0" fitWidth="60.0" layoutX="8.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/img/logodegometa.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="buttonregresar" layoutX="506.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#buttonregresarOnMouseClicked" style="-fx-background-color: #0D3C38;" text="Regresar" textFill="WHITE" />
+   </children>
+</AnchorPane>

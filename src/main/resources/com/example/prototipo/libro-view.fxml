@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="502.0" prefWidth="764.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prototipo.controllers.LibroController">
+   <children>
+      <Label layoutX="314.0" layoutY="14.0" text="Libreria" textFill="#fffdfd">
+         <font>
+            <Font name="System Bold Italic" size="37.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="71.0" fitWidth="146.0" layoutX="3.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/img/logodegometa.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="buttonlibrosdelaescuela" layoutX="61.0" layoutY="218.0" mnemonicParsing="false" onMouseClicked="#buttonlibrosdelaescuelaOnMouseClicked" prefHeight="30.0" prefWidth="114.0" text="libros de texto" />
+      <Button fx:id="buttonprogramacion" layoutX="337.0" layoutY="218.0" mnemonicParsing="false" onMouseClicked="#buttonprogramacionOnMouseClicked" prefHeight="30.0" prefWidth="90.0" text="Programacion" />
+      <Button fx:id="buttonhistorias" layoutX="597.0" layoutY="210.0" mnemonicParsing="false" onMouseClicked="#buttonhistoriaOnMouseClicked" prefHeight="30.0" prefWidth="90.0" text="Historias" />
+      <Button fx:id="buttonartes" layoutX="337.0" layoutY="405.0" mnemonicParsing="false" onMouseClicked="#buttonartesOnMouseClicked" prefHeight="30.0" prefWidth="90.0" text="Artes" AnchorPane.bottomAnchor="67.0" AnchorPane.leftAnchor="337.0" AnchorPane.topAnchor="405.0" />
+      <ImageView fitHeight="106.0" fitWidth="186.0" layoutX="40.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="300.0">
+         <image>
+            <Image url="@assets/img/librosdetexto.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="163.0" fitWidth="180.0" layoutX="292.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="98.0">
+         <image>
+            <Image url="@assets/img/programacion.jpg" />
+         </image></ImageView>
+      <ImageView fitHeight="144.0" fitWidth="180.0" layoutX="552.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/img/historias.png" />
+         </image></ImageView>
+      <ImageView fitHeight="134.0" fitWidth="186.0" layoutX="289.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/img/artes.jpg" />
+         </image></ImageView>
+      <Button fx:id="buttonregresar" layoutX="673.0" layoutY="28.0" mnemonicParsing="false" onMouseClicked="#buttonregresarOnMouseClicked" style="-fx-background-color: #0D3C38;" text="Regresar" textFill="#fcfafa" />
+   </children>
+</AnchorPane>

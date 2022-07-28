@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="417.0" prefWidth="663.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prototipo.controllers.Arte">
+   <children>
+      <Label layoutX="262.0" layoutY="14.0" text="Libreria" textFill="#fcf9f9">
+         <font>
+            <Font name="System Bold Italic" size="38.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonpintar" layoutX="71.0" layoutY="314.0" mnemonicParsing="false" onMouseClicked="#buttonpintarOnMouseClicked" text="Pintar">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonmusica" layoutX="299.0" layoutY="314.0" mnemonicParsing="false" onMouseClicked="#buttonmusicaOnMouseClicked" text="Musica">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttoncanto" layoutX="515.0" layoutY="314.0" mnemonicParsing="false" onMouseClicked="#buttoncantoOnMouseClicked" text="Canto" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="191.0" fitWidth="250.0" layoutX="40.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/img/pintar.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="191.0" fitWidth="273.0" layoutX="276.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/img/musica.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="191.0" fitWidth="208.0" layoutX="478.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/img/canto.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="buttonregresar" layoutX="579.0" layoutY="29.0" mnemonicParsing="false" onMouseClicked="#buttonregresarOnMouseCliCked" style="-fx-background-color: #0D3C38;" text="Regresar" textFill="#fcf7f7" />
+      <ImageView fitHeight="90.0" fitWidth="72.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/img/logodegometa.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
