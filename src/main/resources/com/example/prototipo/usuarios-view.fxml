@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prototipo.controllers.UsuariosController">
+   <children>
+      <TextArea fx:id="txtAreaUsuarios" layoutX="22.0" layoutY="61.0" prefHeight="219.0" prefWidth="556.0" />
+      <Label alignment="CENTER" layoutX="134.0" layoutY="24.0" prefHeight="29.0" prefWidth="329.0" text="Usuarios Disponibles" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnRegresar" layoutX="499.0" layoutY="347.0" mnemonicParsing="false" onMouseClicked="#btnRegresarOnMouseClicked" text="Volver" />
+      <Button fx:id="btnMostrar" layoutX="274.0" layoutY="296.0" mnemonicParsing="false" onMouseClicked="#btnMostrarOnMouseClicked" text="Mostrar" />
+   </children>
+</AnchorPane>

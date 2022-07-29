@@ -2,13 +2,12 @@ package com.example.prototipo.models;
 
 import java.util.ArrayList;
 
-public class ValidateUser extends User{
-    public static ArrayList<User> users = new ArrayList<>();
+public class AdminDefault {
+    ArrayList<User> administrador = new ArrayList<>();
 
-
-    public ValidateUser(){}
-
-
+    public AdminDefault(){
+        administrador.add(new User("Administrador", "admin1234@com", "Hombre", "admin", "12345"));
+    }
     public boolean autenticarUser(String username, String password){
         boolean status = false;
         User user = findUser(username);
@@ -22,13 +21,14 @@ public class ValidateUser extends User{
         User user = null;
         boolean status = false;
         int index = 0;
-        while (!status && index< users.size()){
-            if (users.get(index).getUsername().equals(username)){
-                user = users.get(index);
+        while (!status && index< administrador.size()){
+            if (administrador.get(index).getUsername().equals(username)){
+                user = administrador.get(index);
                 status = true;
             }
             index++;
         }
         return user;
     }
+
 }

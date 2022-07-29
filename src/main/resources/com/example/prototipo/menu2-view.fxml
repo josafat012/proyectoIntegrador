@@ -34,5 +34,6 @@
             <Image url="@assets/img/logodegometa.png" />
          </image>
       </ImageView>
+      <Button fx:id="btnCerrarSesion" layoutX="306.0" layoutY="421.0" mnemonicParsing="false" onMouseClicked="#btnCerrarSesionOnMouseClicked" text="Cerrar Sesión" />
    </children>
 </AnchorPane>

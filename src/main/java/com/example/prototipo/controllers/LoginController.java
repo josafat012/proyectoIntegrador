@@ -1,6 +1,7 @@
 package com.example.prototipo.controllers;
 
 import com.example.prototipo.HelloApplication;
+import com.example.prototipo.models.AdminDefault;
 import com.example.prototipo.models.ValidateUser;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
@@ -11,6 +12,7 @@ import javafx.scene.input.MouseEvent;
 
 public class LoginController {
     ValidateUser user = new ValidateUser();
+    AdminDefault admin = new AdminDefault();
     @FXML
     private Button btnCrearLogin;
 
@@ -38,7 +40,10 @@ public class LoginController {
 
         if (user.autenticarUser(txtUsername.getText(), txtPassword.getText())){
             HelloApplication.setFMLX("menu2-view", "Menu - Principal");
-        }else{
+        }else if (admin.autenticarUser(txtUsername.getText(),txtPassword.getText())){
+            HelloApplication.setFMLX("adminMenu-view", "Menu - Principal");
+        }
+        else{
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText(null);
             alert.setTitle("Login - Error");

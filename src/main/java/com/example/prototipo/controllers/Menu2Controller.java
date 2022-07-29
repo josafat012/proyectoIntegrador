@@ -11,6 +11,9 @@ public class Menu2Controller {
     private Button cursos;
 
     @FXML
+    private Button btnCerrarSesion;
+
+    @FXML
     private Button foro;
 
     @FXML
@@ -37,4 +40,10 @@ public class Menu2Controller {
         HelloApplication.setFMLX("mensajeria-view", "Chat - Mensajes");
     }
 
+    @FXML
+    void btnCerrarSesionOnMouseClicked(MouseEvent event) {
+        HelloApplication.setFMLX("login-view", "Home - Prototipo");
+    }
 }
+
+

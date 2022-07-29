@@ -51,6 +51,7 @@ public class RootController {
             op.users.add(datos);
             persona = new Persona(txtUsername.getText());
             almanaque.userEntry.add(persona);
+            almanaque.userAdmin.add(datos);
             HelloApplication.setFMLX("login-view", "Login");
         }
     }

@@ -36,7 +36,6 @@ public class Arte {
             }
 
         }
-
     }
 
     @FXML
